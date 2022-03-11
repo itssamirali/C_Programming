@@ -11,6 +11,7 @@ int main(){
     return 0;
 }
 
+//Function Definitation
 void Hello(){
 
 printf("Hello_World! :)\n");
