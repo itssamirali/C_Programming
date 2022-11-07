@@ -3,11 +3,13 @@
 int main()
 {
 
-    char name[15] = "Farmhouse"; // TODO get name as user input
+    char name[30];
     char size;
     int personItserves;
     float retailPrice;
 
+    printf("Enter the name of Pizza :");
+    scanf("%[^\n]%*c", name);
     printf("Enter the size of a Pizza either S , M , L :");
     scanf("%c", &size);
     printf("Enter the person it serves :");
