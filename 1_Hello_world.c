@@ -6,6 +6,6 @@
 #include <stdio.h>
 int main()
 {
-    puts("Welcome to the Journey of C Programming");
+    printf("Welcome to the Journey of C Programming\n");
     printf("I am here to learn C programming");
 }
