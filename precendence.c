@@ -3,7 +3,9 @@
 int main()
 {
 
-    int result = 3 * 10 - 2 % 5 / 2;
+    int a = 10, b = 10, c = 15;
+
+    int result = a > b && c >= a || b;
 
     printf("The Result of : %d", result);
 }
