@@ -12,6 +12,7 @@ int main()
 
     puts("Enter first number: ");
     scanf("%d", &x);
+
     puts("Enter second number: ");
     scanf("%d", &y);
 
