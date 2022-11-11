@@ -1,11 +1,8 @@
-#include<stdio.h>
-int main(){
+#include <stdio.h>
+int main()
+{
 
-    //This is a string
-    printf("Namaste World !!!\n");
-
-    /*This
-    is 
-    the code!*/
-    printf("C is a Programming Laguage!");
+    int a = 10, b = 10, c = 15;
+    int result = !(a > b) && !(c >= a || a == b);
+    printf(result);
 }
