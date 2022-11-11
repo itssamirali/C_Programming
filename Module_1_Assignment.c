@@ -8,8 +8,8 @@
 int main()
 {
 
-    char Name[10], Class[3], Message[50], Section, Grade;
-    int Roll_No, English, Hindi, Maths, Science, Social_Science, Computers, Total_Marks;
+    char Name[15], Section, Grade;
+    int Class, Roll_No, English, Hindi, Maths, Science, Social_Science, Computers, Total_Marks;
     float Percentage;
 
     puts("---------------------------------------------------------------");
@@ -19,15 +19,16 @@ int main()
 
     printf("\nEnter the Student Name : ");
     scanf("%[^\n]%*c", Name);
-    printf("\nEnter Student Class(in Roman): ");
-    scanf("%[^\n]%*c", Class);
+    printf("\nEnter Student Class: ");
+    scanf("%d", &Class);
     printf("\nEnter Student Roll No.: ");
     scanf("%d", &Roll_No);
     printf("\nEnter Student Section : ");
     scanf("%s", &Section);
+
     printf("\nNow put the subjects marks out of 100\n");
-    printf("----------------------------------\n")
-        printf("\nMarks out of 100 in English : ");
+    printf("----------------------------------\n");
+    printf("Marks out of 100 in English : ");
     scanf("%d", &English);
     printf("\nMarks out of 100 in Hindi : ");
     scanf("%d", &Hindi);
@@ -40,10 +41,9 @@ int main()
     printf("\nMarks out of 100 in Computers : ");
     scanf("%d", &Computers);
 
-    printf("\n Calculating Result .......");
-
     Total_Marks = Hindi + English + Maths + Science + Social_Science + Computers;
     Percentage = Total_Marks / 6;
+
     if (Total_Marks > 500 || Total_Marks <= 0)
     {
         printf("\nYour calculation is Invalid, So Your program is terminated . ");
@@ -74,16 +74,19 @@ int main()
         Grade = 'F';
     }
 
-    puts("---------------------------------------------------------------------------------");
+    printf("\nCalculating Result .......................\n\n");
+
     puts("******************* Welcome to Jawahar Navodaya Vidyalaya ***********************");
     puts("-----------------------------Annual Report Card----------------------------------");
     puts("*********************************************************************************");
-    printf("Name : %s | Class : %s | Roll No.: %d\n", Name, Class, Roll_No);
+    printf("Name :  %s     |   Class :  %d      |   Roll No.:  %d      |  Section :  %c  \n", Name, Class, Roll_No, Section);
     puts("=================================================================================");
     puts("Subject : Hindi || English || Maths || Science || Social Science || Computers  ||");
     puts("=================================================================================");
     printf("Marks   :  %d\t     %d\t       %d\t  %d\t       %d\t       %d\t\n", Hindi, English, Maths, Science, Social_Science, Computers);
     puts("=================================================================================");
-    printf("Total Marks Secured : %d\t     || Percentage : %.1f\t     || Grade : %c\t  ||\n", Total_Marks, Percentage, Grade);
+    printf("Total Marks Secured : %d\t||   Percentage : %.1f\t     ||   Grade : %c\t  \n", Total_Marks, Percentage, Grade);
     puts("=================================================================================");
+
+    return 0;
 }
