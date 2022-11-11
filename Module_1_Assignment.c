@@ -26,7 +26,8 @@ int main()
     printf("\nEnter Student Section : ");
     scanf("%s", &Section);
     printf("\nNow put the subjects marks out of 100\n");
-    printf("\nMarks out of 100 in English : ");
+    printf("----------------------------------\n")
+        printf("\nMarks out of 100 in English : ");
     scanf("%d", &English);
     printf("\nMarks out of 100 in Hindi : ");
     scanf("%d", &Hindi);
@@ -39,11 +40,13 @@ int main()
     printf("\nMarks out of 100 in Computers : ");
     scanf("%d", &Computers);
 
+    printf("\n Calculating Result .......");
+
     Total_Marks = Hindi + English + Maths + Science + Social_Science + Computers;
     Percentage = Total_Marks / 6;
-    if (Total_Marks > 500 && Total_Marks <= 0)
+    if (Total_Marks > 500 || Total_Marks <= 0)
     {
-        printf("\nYour calculation is Invalid, So program is terminated . ");
+        printf("\nYour calculation is Invalid, So Your program is terminated . ");
         exit(0);
     }
     else if (Total_Marks >= 450 && Total_Marks <= 500)
@@ -75,7 +78,7 @@ int main()
     puts("******************* Welcome to Jawahar Navodaya Vidyalaya ***********************");
     puts("-----------------------------Annual Report Card----------------------------------");
     puts("*********************************************************************************");
-    printf("Name : %s | Class : %s | Roll No.: %d | Section : %s\n", Name, Class, Roll_No, Section);
+    printf("Name : %s | Class : %s | Roll No.: %d\n", Name, Class, Roll_No);
     puts("=================================================================================");
     puts("Subject : Hindi || English || Maths || Science || Social Science || Computers  ||");
     puts("=================================================================================");
