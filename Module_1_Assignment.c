@@ -7,7 +7,7 @@
 
 int main()
 {
-
+    // Declare Variable
     char Name[15], Section, Grade;
     int Class, Roll_No, English, Hindi, Maths, Science, Social_Science, Computers, Total_Marks;
     float Percentage;
@@ -19,9 +19,9 @@ int main()
 
     printf("\nEnter the Student Name : ");
     scanf("%[^\n]%*c", Name);
-    printf("\nEnter Student Class: ");
+    printf("\nEnter Student Class : ");
     scanf("%d", &Class);
-    printf("\nEnter Student Roll No.: ");
+    printf("\nEnter Student Roll No. : ");
     scanf("%d", &Roll_No);
     printf("\nEnter Student Section : ");
     scanf("%s", &Section);
@@ -41,6 +41,7 @@ int main()
     printf("\nMarks out of 100 in Computers : ");
     scanf("%d", &Computers);
 
+    // Claculation
     Total_Marks = Hindi + English + Maths + Science + Social_Science + Computers;
     Percentage = Total_Marks / 6;
 
