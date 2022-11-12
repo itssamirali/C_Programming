@@ -17,6 +17,10 @@ int main()
         if (number < 0)
             break;
 
+        if (number > 1000)
+            puts("number greater than 1000 is not allowed");
+        continue;
+
         sum += number;
     }
 
