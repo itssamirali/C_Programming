@@ -7,13 +7,14 @@ int main()
 
     int num, sum = 0;
     puts("Enter a number : ");
-    gets(num);
+    scanf("%d", &num);
     printf("The nth term of natural numbers are : ");
-    for (int i = 1; i < n; i++)
+    int i = 1;
+    while (i <= num)
     {
-
-        printf("%d ", i)
-            sum = sum + 1;
+        printf("%d ", i);
+        sum = sum + i;
+        i++;
     }
     printf("\nThe sum of nth natural mnumbers are : %d", sum);
 }
