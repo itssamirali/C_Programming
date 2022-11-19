@@ -12,6 +12,6 @@ int main()
     char c = 'W';
     unsigned long ux = 2541567890;
 
-    printf(int(c));
+    printf(c;
     // x + c,dx + x, ((int) dx) + ax, a + x, s + b, ax + b, s + c, ax + c, ax + ux
 }
