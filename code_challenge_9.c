@@ -11,13 +11,14 @@ int main()
 {
 
     /* WAP to store 'n' natural numbers. */
-    int *ptr, n, sum = 0;
+    int n;
+    float *ptr, sum = 0;
 
     puts("Enter n: ");
     scanf("%d", &n);
 
     /* Dynamically allocate memory using malloc(). */
-    ptr = (int *)malloc(n * sizeof(int));
+    ptr = (float *)malloc(n * sizeof(float));
 
     if (ptr == NULL)
     {
@@ -37,9 +38,9 @@ int main()
         printf("The values present in the allocated memory block: ");
         for (int i = 0; i < n; i++)
         {
-            printf("%d ", ptr[i]);
+            printf("%f ", ptr[i]);
         }
-        printf("\nThe sum of allocated menory blocks are : %d", sum);
+        printf("\nThe sum of allocated menory blocks are : %.2f", sum);
     }
 
     return 0;
